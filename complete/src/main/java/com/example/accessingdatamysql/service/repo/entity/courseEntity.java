@@ -14,7 +14,7 @@ import jakarta.persistence.Id;
 public class CourseEntity{
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(name="ID", updatable=false)	
+    @Column(name="ID_C", updatable=false)	
 	private Integer id;
 
 	@Column(name="NAME")
