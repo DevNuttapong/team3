@@ -12,76 +12,40 @@ import jakarta.persistence.Id;
 public class StudentEntity {
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(name="ID", updatable=false)	
-	private Integer id;
+    @Column(name="ID_STD", updatable=false)	
+	private Integer idSTU;
 
-	@Column(name="NAME")
-	private String name;
+	@Column(name="NAME_STU")
+	private String nameSTU;
 
-	@Column(name="EMAIL")
-	private String email;
+	@Column(name="CREDIT_STU")
+	private String creditSTU;
 
-	@Column(name="STATE")
-	private Integer state;
+	StudentEntity() {
 
-	@Column(name="CREATED")
-	private Timestamp created;
-
-
-
-
-
-	public StudentEntity() {
+	}
+	StudentEntity(Integer idSTU, String name, Integer creditSTU) {
+		this.idSTU = idSTU;
+		this.nameSTU = nameSTU;
+		this.creditSTU = creditSTU;
 	}
 	
-	public StudentEntity(Integer id, String name, Integer state) {
-		this.id = id;
-		this.name = name;
-		this.state = state;
+	public String getCreditSTU() {
+		return creditSTU;
 	}
-
-
-
-
-	public Integer getId() {
-		return id;
+	public Integer getIdSTU() {
+		return idSTU;
 	}
-
-	public void setId(Integer id) {
-		this.id = id;
+	public String getNameSTU() {
+		return nameSTU;
 	}
-
-	public String getName() {
-		return name;
+	public void setCreditSTU(String creditSTU) {
+		this.creditSTU = creditSTU;
 	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setIdSTU(Integer idSTU) {
+		this.idSTU = idSTU;
 	}
-
-	public String getEmail() {
-		return email;
+	public void setNameSTU(String nameSTU) {
+		this.nameSTU = nameSTU;
 	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public Integer getState() {
-		return state;
-	}
-
-	public void setState(Integer state) {
-		this.state = state;
-	}
-
-	public Timestamp getCreated() {
-		return created;
-	}
-
-	public void setCreated(Timestamp created) {
-		this.created = created;
-	}
-
-
 }
