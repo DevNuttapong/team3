@@ -30,22 +30,22 @@ public class StudentEntity {
 		this.creditSTU = creditSTU;
 	}
 	
-	public String getCreditSTU() {
+	public String getCredit() {
 		return creditSTU;
 	}
-	public Integer getIdSTU() {
+	public Integer getId() {
 		return idSTU;
 	}
-	public String getNameSTU() {
+	public String getName() {
 		return nameSTU;
 	}
-	public void setCreditSTU(String creditSTU) {
+	public void setCredit(String creditSTU) {
 		this.creditSTU = creditSTU;
 	}
-	public void setIdSTU(Integer idSTU) {
+	public void setId(Integer idSTU) {
 		this.idSTU = idSTU;
 	}
-	public void setNameSTU(String nameSTU) {
+	public void setName(String nameSTU) {
 		this.nameSTU = nameSTU;
 	}
 }
