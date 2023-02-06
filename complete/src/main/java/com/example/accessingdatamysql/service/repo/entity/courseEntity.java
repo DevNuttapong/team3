@@ -11,7 +11,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity(name="COURSE") // This tells Hibernate to make a table out of this class
-public class courseEntity{
+public class CourseEntity{
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name="ID", updatable=false)	
@@ -26,11 +26,11 @@ public class courseEntity{
 	@Column(name="MAXSEAT", updatable=false)
 	private Integer maxSeat;
 
-	public courseEntity(){
+	public CourseEntity(){
 
 	}
 
-	public courseEntity(Integer id, String name, Integer credit, Integer maxSeat) {
+	public CourseEntity(Integer id, String name, Integer credit, Integer maxSeat) {
 		this.id = id;
 		this.name = name;
 		this.credit = credit;
